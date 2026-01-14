@@ -304,6 +304,17 @@ We can filter by the primary key `id` to get a specific row:
 
 ```console
 >>> Pet.query.filter_by(id = 1).first()
+## Run tests
+
+To run the project's tests while avoiding incompatible third-party pytest plugins,
+use the included helper script:
+
+```
+./run_tests.sh
+```
+
+You can also pass extra pytest arguments to the helper, e.g. `./run_tests.sh -k "pet"`.
+
 <Pet 1, Fido, Dog>
 ```
 
